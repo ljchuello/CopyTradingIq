@@ -148,6 +148,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Biblioteca\Botones.cs" />
+    <Compile Include="Biblioteca\Cadena.cs" />
+    <Compile Include="Biblioteca\Fichero.cs" />
+    <Compile Include="Biblioteca\IqOptionWs.cs" />
+    <Compile Include="Biblioteca\Notificacion.cs" />
+    <Compile Include="Biblioteca\Resultado.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,5 +185,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
