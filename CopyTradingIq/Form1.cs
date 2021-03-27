@@ -43,6 +43,19 @@ namespace CopyTradingIq
             Bitacora_Refrescar_Async();
         }
 
+        // Cerrar programa
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception)
+            {
+                // ignored
+            }
+        }
+
         #region Bitacora
 
         async Task Bitacora_Refrescar_Async()
@@ -71,17 +84,5 @@ namespace CopyTradingIq
         }
 
         #endregion
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Close();
-            }
-            catch (Exception)
-            {
-                // ignored
-            }
-        }
     }
 }
